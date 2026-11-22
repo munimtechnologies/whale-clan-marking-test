@@ -1,0 +1,383 @@
+{
+ "study": "whale-clan-marking-test",
+ "plan": "MARKING-PREREG.md",
+ "reported": {
+  "r_id": -0.499,
+  "p_id": 0.041,
+  "r_non": -0.076,
+  "p_non": 0.411
+ },
+ "priors": {
+  "P1": 0.8,
+  "P2": 0.7,
+  "P3": 0.65,
+  "P4": 0.8,
+  "P5": 0.5,
+  "P6": 0.5,
+  "P7": 0.65
+ },
+ "notes": [
+  "CSV: 24237 rows; 22829 typed codas of assigned clans in 191 repertoires with >= 25 typed codas",
+  "clan names differ between sources; T4/T5 use the CSV rebuild similarity"
+ ],
+ "inputs": {
+  "csv_sha256": "96bbf264286eadc94c3d2d68229b133fa135733f759c0bad915c66ccd7a84acf",
+  "csv_bytes": 3872453,
+  "rdata_sha256": "c232a7a8765ccf8b94f001e81aa1e0b3b132f8fd283b39c87c7cf81326efedda",
+  "rdata_bytes": 3571
+ },
+ "csv": {
+  "rows": 24237,
+  "typed_clan_codas_kept": 22829,
+  "repertoires": 191,
+  "repertoires_mixed_clan": 0,
+  "types": 101,
+  "clans": [
+   "fourplus",
+   "palindrome",
+   "plusone",
+   "rapidincreasing",
+   "regular",
+   "short",
+   "slowincreasing"
+  ],
+  "repertoires_without_coords": 0
+ },
+ "csv_rebuild": {
+  "clans": [
+   "fourplus",
+   "palindrome",
+   "plusone",
+   "rapidincreasing",
+   "regular",
+   "short",
+   "slowincreasing"
+  ],
+  "n_repertoires": [
+   26,
+   15,
+   15,
+   19,
+   50,
+   50,
+   16
+  ],
+  "id_types_per_clan": {
+   "fourplus": [
+    "3_35",
+    "4_49",
+    "5_54",
+    "5_55",
+    "5_57",
+    "6_611",
+    "6_614",
+    "7_710",
+    "7_714"
+   ],
+   "palindrome": [
+    "10_102",
+    "4_411",
+    "4_412",
+    "5_514",
+    "7_711",
+    "7_73",
+    "9_94",
+    "9_95"
+   ],
+   "plusone": [
+    "5_515",
+    "6_613",
+    "6_68",
+    "7_712",
+    "8_89"
+   ],
+   "rapidincreasing": [
+    "4_45",
+    "4_47",
+    "5_56",
+    "7_715"
+   ],
+   "regular": [
+    "10_109",
+    "5_51",
+    "5_510",
+    "5_512",
+    "6_62",
+    "6_63",
+    "7_71",
+    "7_74",
+    "8_81",
+    "8_84",
+    "9_92"
+   ],
+   "short": [
+    "3_31",
+    "3_310",
+    "3_313",
+    "3_37",
+    "4_46"
+   ],
+   "slowincreasing": [
+    "3_39",
+    "4_413",
+    "6_69"
+   ]
+  },
+  "n_id_types": {
+   "fourplus": 9,
+   "palindrome": 8,
+   "plusone": 5,
+   "rapidincreasing": 4,
+   "regular": 11,
+   "short": 5,
+   "slowincreasing": 3
+  },
+  "n_id_union": 45,
+  "n_non_id": 56,
+  "repro": {
+   "pearson": {
+    "r_id": -0.33803892290009296,
+    "r_non": -0.2760897088091557,
+    "ok": false
+   },
+   "spearman": {
+    "r_id": -0.2,
+    "r_non": -0.2987012987012987,
+    "ok": false
+   }
+  }
+ },
+ "rdata_objects": [
+  ".Random.seed",
+  "IDmean",
+  "nonIDmean"
+ ],
+ "fig4": {
+  "clans": [
+   "fourplus",
+   "pal",
+   "plusone",
+   "rapidincreasing",
+   "regular",
+   "short",
+   "slowincreasing"
+  ],
+  "n_rows_id": 21,
+  "geov_same_in_both": true,
+  "repro": {
+   "pearson": {
+    "r_id": -0.498644894555762,
+    "r_non": -0.07637160138423973,
+    "ok": true
+   },
+   "spearman": {
+    "r_id": -0.561038961038961,
+    "r_non": 0.032467532467532464,
+    "ok": false
+   }
+  }
+ },
+ "source": "authors_fig4",
+ "method": "pearson",
+ "T1": {
+  "id": {
+   "obs": -0.498644894555762,
+   "p": 0.040873015873015874,
+   "n_perm": 5040,
+   "exact": true
+  },
+  "non": {
+   "obs": -0.07637160138423973,
+   "p": 0.40813492063492063,
+   "n_perm": 5040,
+   "exact": true
+  },
+  "min_p": 0.0001984126984126984
+ },
+ "T2": {
+  "obs": -0.4222732931715223,
+  "p": 0.09107142857142857,
+  "n_perm": 5040,
+  "exact": true
+ },
+ "T3": {
+  "loco": [
+   {
+    "dropped": "fourplus",
+    "r_id": -0.37874510304649184,
+    "p_id": 0.1763888888888889,
+    "D": -0.2770528200535536,
+    "p_D": 0.23194444444444445,
+    "n_perm": 720
+   },
+   {
+    "dropped": "pal",
+    "r_id": -0.43996409571684814,
+    "p_id": 0.08194444444444444,
+    "D": -0.4407075772703351,
+    "p_D": 0.11944444444444445,
+    "n_perm": 720
+   },
+   {
+    "dropped": "plusone",
+    "r_id": -0.43559203651394846,
+    "p_id": 0.08888888888888889,
+    "D": -0.3254103406915479,
+    "p_D": 0.1986111111111111,
+    "n_perm": 720
+   },
+   {
+    "dropped": "rapidincreasing",
+    "r_id": -0.49192795550537294,
+    "p_id": 0.04861111111111111,
+    "D": -0.3695286734382794,
+    "p_D": 0.16111111111111112,
+    "n_perm": 720
+   },
+   {
+    "dropped": "regular",
+    "r_id": -0.5412425957985253,
+    "p_id": 0.06111111111111111,
+    "D": -0.6088481234382204,
+    "p_D": 0.0625,
+    "n_perm": 720
+   },
+   {
+    "dropped": "short",
+    "r_id": -0.6990751618034341,
+    "p_id": 0.009722222222222222,
+    "D": -0.6011978751052333,
+    "p_D": 0.1111111111111111,
+    "n_perm": 720
+   },
+   {
+    "dropped": "slowincreasing",
+    "r_id": -0.47842022373710785,
+    "p_id": 0.07222222222222222,
+    "D": -0.22594781049058693,
+    "p_D": 0.2222222222222222,
+    "n_perm": 720
+   }
+  ],
+  "keep_p_le_0.10": 6,
+  "needed": 5,
+  "lose_p_gt_0.05": 5
+ },
+ "clan_sets_match": false,
+ "T4": {
+  "variants": {
+   "500_mean": {
+    "obs": -0.563327999849235,
+    "p": 0.01011904761904762,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "500_min": {
+    "obs": -0.3021059293781724,
+    "p": 0.10416666666666667,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "500_max": {
+    "obs": -0.6321674270339188,
+    "p": 0.003373015873015873,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "1000_mean": {
+    "obs": -0.33803892290009296,
+    "p": 0.09781746031746032,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "1000_min": {
+    "obs": -0.1816261634085656,
+    "p": 0.2501984126984127,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "1000_max": {
+    "obs": -0.4617687354867871,
+    "p": 0.0628968253968254,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "2000_mean": {
+    "obs": -0.26421170873540495,
+    "p": 0.17123015873015873,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "2000_min": {
+    "obs": -0.157283145444253,
+    "p": 0.27956349206349207,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "2000_max": {
+    "obs": -0.4116874034942562,
+    "p": 0.07896825396825397,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   }
+  },
+  "n_valid": 9,
+  "n_sig": 2
+ },
+ "T5": null,
+ "T6": {
+  "n_eligible": 4,
+  "eligible": [
+   "fourplus",
+   "palindrome",
+   "rapidincreasing",
+   "short"
+  ],
+  "n_arrangements": 12888720,
+  "obs": 0.11696307291021131,
+  "p_up": 0.0401,
+  "p_low": 0.96,
+  "exact": false,
+  "n_null": 10000,
+  "verdict": "MARKING_IN_SYMPATRY",
+  "unblocked_exploratory": {
+   "n_eligible": 4,
+   "eligible": [
+    "fourplus",
+    "palindrome",
+    "rapidincreasing",
+    "short"
+   ],
+   "n_arrangements": 1391636978465097000,
+   "obs": 0.07251614633080858,
+   "p_up": 0.0418,
+   "p_low": 0.9583,
+   "exact": false,
+   "n_null": 10000
+  }
+ },
+ "verdict": "ID_TREND_WITHOUT_CONTRAST",
+ "predictions": {
+  "outcomes": {
+   "P1": true,
+   "P2": true,
+   "P3": true,
+   "P4": true,
+   "P5": null,
+   "P6": true,
+   "P7": false
+  },
+  "brier": 0.16083333333333336,
+  "n_graded": 6,
+  "n_true": 5
+ }
+}
