@@ -1,0 +1,191 @@
+{
+ "study": "whale-clan-marking-test",
+ "plan": "AMENDMENT-1.md (post hoc, exploratory)",
+ "priors": {
+  "Q1": 0.55,
+  "Q2": 0.5,
+  "Q3": 0.6,
+  "Q4": 0.5,
+  "Q5": 0.6
+ },
+ "notes": [
+  "CSV: 24237 rows; 22829 typed codas of assigned clans in 191 repertoires with >= 25 typed codas"
+ ],
+ "inputs": {
+  "csv_sha256": "96bbf264286eadc94c3d2d68229b133fa135733f759c0bad915c66ccd7a84acf",
+  "rdata_sha256": "c232a7a8765ccf8b94f001e81aa1e0b3b132f8fd283b39c87c7cf81326efedda"
+ },
+ "A1": {
+  "n_eligible": 4,
+  "eligible": [
+   "fourplus",
+   "palindrome",
+   "rapidincreasing",
+   "short"
+  ],
+  "n_arrangements": 12888720,
+  "obs": 0.05592619589233492,
+  "p_up": 0.1099,
+  "p_low": 0.8902,
+  "exact": false,
+  "n_null": 10000,
+  "verdict": "NOT_DETECTED"
+ },
+ "A2": {
+  "n_eligible": 4,
+  "eligible": [
+   "fourplus",
+   "palindrome",
+   "rapidincreasing",
+   "short"
+  ],
+  "n_arrangements": 12888720,
+  "obs": 0.13292944664923403,
+  "p_up": 0.0356,
+  "p_low": 0.9645,
+  "exact": false,
+  "n_null": 10000,
+  "verdict": "MARKING_IN_SYMPATRY"
+ },
+ "A3": [
+  {
+   "dropped": "fourplus",
+   "n_eligible": 3,
+   "obs": 0.03654761055955224,
+   "p_up": 0.1863,
+   "verdict": "NOT_DETECTED"
+  },
+  {
+   "dropped": "palindrome",
+   "n_eligible": 3,
+   "obs": 0.06627296676622552,
+   "p_up": 0.0807,
+   "verdict": "NOT_DETECTED"
+  },
+  {
+   "dropped": "rapidincreasing",
+   "n_eligible": 3,
+   "obs": 0.07197734663699096,
+   "p_up": 0.0803,
+   "verdict": "NOT_DETECTED"
+  },
+  {
+   "dropped": "short",
+   "n_eligible": 3,
+   "obs": 0.042346140549457185,
+   "p_up": 0.31851851851851853,
+   "verdict": "NOT_DETECTED"
+  }
+ ],
+ "A1A2_reading": "EMPHASIS_LOST_UNDER_LOCO",
+ "A4": {
+  "T4_variants": {
+   "500_mean": {
+    "obs": -0.6587878096218296,
+    "p": 0.006150793650793651,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "500_min": {
+    "obs": -0.48311616801513935,
+    "p": 0.01865079365079365,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "500_max": {
+    "obs": -0.5675767283760146,
+    "p": 0.018849206349206348,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "1000_mean": {
+    "obs": -0.49846777012926263,
+    "p": 0.04126984126984127,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "1000_min": {
+    "obs": -0.3617444102332759,
+    "p": 0.075,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "1000_max": {
+    "obs": -0.5130046127732837,
+    "p": 0.043055555555555555,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "2000_mean": {
+    "obs": -0.4088566412292818,
+    "p": 0.08174603174603175,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "2000_min": {
+    "obs": -0.3093143031130377,
+    "p": 0.12638888888888888,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   },
+   "2000_max": {
+    "obs": -0.46160748634532656,
+    "p": 0.07182539682539682,
+    "n_perm": 5040,
+    "exact": true,
+    "valid": true
+   }
+  },
+  "T4_n_valid": 9,
+  "T4_n_sig": 5,
+  "r_fig_geov_vs_csv_1000_mean": 0.9999992664642122,
+  "T5": {
+   "r_overlap_effort": 0.1065514758522456,
+   "r_simid_effort": 0.3463509277431547,
+   "partial_effort": {
+    "obs": -0.5741524880393131,
+    "p": 0.01646825396825397,
+    "n_perm": 5040,
+    "exact": true
+   },
+   "r_overlap_nid": 0.10514316824226415,
+   "partial_nid": {
+    "obs": -0.49079139817990053,
+    "p": 0.048412698412698414,
+    "n_perm": 5040,
+    "exact": true
+   }
+  }
+ },
+ "A5": {
+  "worlds": 5040,
+  "exact": true,
+  "hits_id": 252,
+  "rate_id": 0.05,
+  "hits_declaration": 230,
+  "rate_declaration": 0.04563492063492063,
+  "p_obs_id": 0.040873015873015874,
+  "p_obs_non": 0.40813492063492063,
+  "matches_registered_T1": true
+ },
+ "predictions": {
+  "outcomes": {
+   "Q1": true,
+   "Q2": true,
+   "Q3": true,
+   "Q4": false,
+   "Q5": false
+  },
+  "brier": 0.24450000000000002,
+  "n_graded": 5,
+  "n_true": 3
+ }
+}
